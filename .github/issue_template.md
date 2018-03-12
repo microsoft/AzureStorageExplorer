@@ -1,14 +1,12 @@
-Storage Explorer Version:
+**Storage Explorer Version:**
 
-OS Version:
+**OS Version:**
 
-Steps to Reproduce:
+**Steps to Reproduce:**
 
 1.
 2.
 
-Expected Experience:
+**Expected Experience:**
 
-Actual Experience:
-
-
+**Actual Experience:**

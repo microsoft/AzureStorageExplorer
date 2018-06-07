@@ -1,5 +1,5 @@
 **Storage Explorer Version**: <!-- Enter the Storage Explorer version in which you encountered your issue. -->
-**Platform**: <!-- Enter the platform (see About dialog). -->
+**Platform/OS Version**: <!-- Enter the OS and version (see About dialog). -->
 **Architecture**: <!-- Enter the architecture of the app (see About dialog). -->
 **Regression From**: <!-- Was this working on a previous version? If so, which one? -->
 

@@ -1,5 +1,24 @@
+# Bug Reports and Feature Requests
+
+> 🛑 **STOP** 🛑
+>
+> Storage Explorer welcomes feedback! However, we can't guarantee that we'll respond to your submissions right away. If you need assistance, _do not_ submit a bug report here! Please submit an [Azure support request].
+
+Before submitting a bug report or feature request, please follow these guidelines:
+
+* Make sure you're running the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
+
+* Check existing resources, such as the [troubleshooting guide](https://docs.microsoft.com/en-us/azure/storage/common/storage-explorer-troubleshooting) or the [release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnote). You'll find solutions to common problems or issues we are aware of.
+
+* Search the list of [open issues](https://github.com/Microsoft/AzureStorageExplorer/issues). It's very likely someone else may have already submitted your issue.
+
+* Fill out the appropriate [issue template](https://github.com/Microsoft/AzureStorageExplorer/issues/new/choose) as completely as you can. Complete and concise reports will help make your issue much easier and faster to resolve.
+
+[Azure support request]: https://docs.microsoft.com/en-us/azure/azure-supportability/how-to-create-azure-support-request
 
 # Contributing
+
+> Interested in contributing? [Join the conversation](https://github.com/Microsoft/AzureStorageExplorer/issues/138)!
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us

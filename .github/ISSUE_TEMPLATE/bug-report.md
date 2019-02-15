@@ -7,23 +7,6 @@ assignees: ''
 
 ---
 
-<!--
-🛑 **STOP!** 🛑
-
-Many issues filed here are either duplicates of existing issues or requests for technical assistance. So that we can best help you, follow these instructions first before submitting a bug report:
-
-* Check the Storage Explorer troubleshooting guide. Many common problems and solutions can be found there.
-  (https://docs.microsoft.com/en-us/azure/storage/common/storage-explorer-troubleshooting)
-
-* Check the release notes for known issues.
-  (https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnote)
-
-* Not every issue is a bug! If you need assistance, submit an Azure support request.
-  (https://docs.microsoft.com/en-us/azure/azure-supportability/how-to-create-azure-support-request)
-
-* Search the list of existing issues. Someone may have already filed a bug report.
-  (https://github.com/Microsoft/AzureStorageExplorer/issues)
--->
 **Storage Explorer Version**: _In which Storage Explorer version was the bug encountered?_
 **Platform/OS**: _Linux Ubuntu? macOS High Sierra? Windows 10?_
 **Architecture**: _i86? x64?_

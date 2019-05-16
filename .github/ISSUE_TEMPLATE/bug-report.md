@@ -2,7 +2,7 @@
 name: Bug Report
 about: Something not working as expected? Create a bug report to help us improve.
 title: ''
-labels: ":x: bug"
+labels: ''
 assignees: ''
 
 ---

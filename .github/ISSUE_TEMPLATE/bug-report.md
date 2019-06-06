@@ -7,23 +7,24 @@ assignees: ''
 
 ---
 
-**Storage Explorer Version**: _In which Storage Explorer version was the bug encountered?_
-**Platform/OS**: _Linux Ubuntu? macOS High Sierra? Windows 10?_
-**Architecture**: _i86? x64?_
-**Regression From**: _Was this working in a previous version? If so, which one?_
+**Storage Explorer Version**: <!-- In which Storage Explorer version was the bug encountered? -->
+**Build Number**: <!-- What is the build number (Help > About) -->
+**Platform/OS**: <!-- Linux Ubuntu? macOS High Sierra? Windows 10? -->
+**Architecture**: <!-- i86? x64? -->
+**Regression From**:  <!-- Was this working in a previous version? If so, which one? -->
 
-**Bug description**
-_A clear and concise description of what the bug is._
+## Bug Description ##
+<!-- A clear and concise description of what the bug is. -->
 
-**Steps to Reproduce**
-1. _List the minimal steps required to reproduce the bug._
-2. _Be as clear and concise as you can._
+## Steps to Reproduce ##
+<!-- 1. List the minimal steps required to reproduce the bug. -->
+<!-- 2. Be as clear and concise as you can. -->
 
-**Expected Experience**
-_A clear and concise description of what you expected to happen. If applicable, add screenshots to help explain what you expected._
+## Expected Experience ##
+<!-- A clear and concise description of what you expected to happen. If applicable, add screenshots to help explain what you expected. -->
 
-**Actual Experience**
-_A clear and concise description of what actually happens. If applicable, add screenshots to help explain what actually happened._
+## Actual Experience ##
+<!-- A clear and concise description of what actually happens. If applicable, add screenshots to help explain what actually happened. -->
 
-**Additional Context**
-_Add any other context about the problem here, such as unusual system configurations, network restrictions, etc._
+## Additional Context ##
+<!-- Add any other context about the problem here, such as unusual system configurations, network restrictions, etc. -->

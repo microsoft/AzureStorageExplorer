@@ -8,7 +8,7 @@ Before submitting a bug report or feature request, please follow these guideline
 
 * Make sure you're running the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
 
-* Check existing resources, such as the [troubleshooting guide](https://docs.microsoft.com/en-us/azure/storage/common/storage-explorer-troubleshooting) or the [release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnote). You'll find solutions to common problems or issues we are aware of.
+* Check existing resources, such as the [troubleshooting guide](https://docs.microsoft.com/en-us/azure/storage/common/storage-explorer-troubleshooting) or the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases). You'll find solutions to common problems or issues we are aware of.
 
 * Search the list of [open issues](https://github.com/Microsoft/AzureStorageExplorer/issues). It's very likely someone else may have already submitted your issue.
 

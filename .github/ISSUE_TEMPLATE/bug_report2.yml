@@ -1,12 +1,12 @@
 ---
 name: Report a Bug
-description: 
+description: Something not working as expected? Create an issue to help us improve.
 body:
 - type: checkboxes
   id: pre-flight
   attributes:
     label: Preflight Checklist
-    description: Before submitting a bug report, please make sure you've done the following:.
+    description: "Before submitting a bug report, please make sure you've done the following:"
     options:
       - label: I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
         required: true
@@ -15,19 +15,20 @@ body:
       - label: I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
         required: true
 
-- type: markdown
-  value: ---
-
 - type: dropdown
   id: issue-type
   attributes:
-    description: Are you seeking assistance with your issue, or do you believe your issue is a bug?
+    label: Issue Type
+    description: Are you asking for help diagnosing your issue, or are you reporting a bug?
     options:
-    - I need help with my issue
-    - My issue is a bug
+    - I need help diagnosing my issue
+    - I am reporting a bug
   validations:
     required: true
     
+- type: markdown
+  value: ---
+
 - type: input
   id: app-version
   attributes:
@@ -41,7 +42,7 @@ body:
   id: build-number
   attributes:
     label: Build Number
-    description: What is the build number (see Help > About)?
+    description: (See Help > About)
   validations:
     required: true
 
@@ -60,14 +61,13 @@ body:
   id: os-version
   attributes:
     label: OS Version
-    description: What OS version are you using?
     placeholder: Windows 10; macOS Big Sur; Ubuntu 16.04
 
 - type: dropdown
   id: arch
   attributes:
     label: Architecture
-    description: What is the targeted architecture (see Help > About)?
+    description: (See Help > About)?
     options:
     - i86
     - x64
@@ -95,7 +95,7 @@ body:
   attributes:
     label: Steps to Reproduce
     description: List the minimal steps required to reproduce your issue. Be as clear and concise as you can.
-    value: |
+    placeholder: |
       1. 
       2. 
   validations:

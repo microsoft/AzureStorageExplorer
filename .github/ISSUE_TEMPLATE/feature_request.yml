@@ -1,0 +1,57 @@
+name: Request a Feature
+description: Have an idea that would make Storage Explorer better? Let us know!
+body:
+  - type: checkboxes
+    id: pre-flight
+    attributes:
+      label: Preflight Checklist
+      description: "Before submitting a feature request, please make sure you've done the following:"
+      options:
+        - label: I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
+          required: true
+        - label: I have checked existing resources, including the [troubleshooting guide](https://docs.microsoft.com/azure/storage/common/storage-explorer-troubleshooting) and the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases).
+          required: true
+        - label: I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
+          required: true
+
+  - type: markdown
+    attributes:
+      value: ---
+
+  - type: input
+    id: goal
+    attributes:
+      label: Problem
+      description: What are you trying to accomplish? What problems or difficulties are you experiencing?
+      placeholder: |
+        I'm unable to...
+        I get confused when...
+        I get frustrated when I try to...
+    validations:
+      required: true
+
+  - type: input
+    id: solution
+    attributes:
+      label: Desired Solution
+      description: What solutions or fixes would you like to see?
+      placeholder: |
+        I'd like to have support for...
+        It would be better if there was...
+    validations:
+      required: true
+
+  - type: input
+    id: alternative
+    attributes:
+      label: Alternatives and Workarounds
+      description: Are there alternative solutions you have considered? How have you tried to work around this problem?
+      placeholder: |
+        Alternatively, it would be helpful if there was...
+        To work around this problem, I've tried...
+
+  - type: input
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots that can help us understand your feature request better.

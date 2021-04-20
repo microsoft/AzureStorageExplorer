@@ -1,0 +1,113 @@
+name: Report a Bug
+description: Something not working as expected? Create an issue to help us improve.
+body:
+  - type: checkboxes
+    id: pre-flight
+    attributes:
+      label: Preflight Checklist
+      description: "Before submitting a bug report, please make sure you've done the following:"
+      options:
+        - label: I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
+          required: true
+        - label: I have checked existing resources, including the [troubleshooting guide](https://docs.microsoft.com/azure/storage/common/storage-explorer-troubleshooting) and the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases).
+          required: true
+        - label: I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
+          required: true
+
+  - type: markdown
+    attributes:
+      value: ---
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Storage Explorer Version
+      description: In which Storage Explorer version was this bug encountered?
+      placeholder: 1.19.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS Version
+      placeholder: Windows 10; macOS Big Sur; Ubuntu 16.04
+
+  - type: dropdown
+    id: arch
+    attributes:
+      label: Architecture
+      description: Open the About dialog in Storage Explorer to find this.
+      options:
+        - i86
+        - x64
+    validations:
+      required: true
+
+  - type: input
+    id: build-number
+    attributes:
+      label: Build Number
+      description: Open the About dialog in Storage Explorer to find this.
+
+  - type: input
+    id: regression
+    attributes:
+      label: Regression From
+      description: Was this working in a previous version? If so, which one?
+      placeholder: 1.18.0
+
+  - type: markdown
+    attributes:
+      value: ---
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Provide a clear, concise description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to Reproduce
+      description: List the minimal steps required to reproduce the bug. Be as clear and concise as you can.
+      placeholder: |
+        1. Launch Storage Explorer
+        2. Expand a blob container node.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Experience
+      description: Provide a clear, concise description of what actually happens. If applicable, add screenshots to help explain what happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Experience
+      description: Provide a clear, concise description of what you expected to happen. If applicable, add screenshots to help explain what you expected.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other details, such as error messages, unusual system configurations, network restrictions, etc.
+      render: text

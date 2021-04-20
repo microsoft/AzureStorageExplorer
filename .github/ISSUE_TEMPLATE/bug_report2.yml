@@ -1,4 +1,3 @@
----
 name: Report a Bug
 description: Something not working as expected? Create an issue to help us improve.
 body:
@@ -27,7 +26,8 @@ body:
     required: true
     
 - type: markdown
-  value: ---
+  attributes:
+    value: ---
 
 - type: input
   id: app-version
@@ -80,7 +80,8 @@ body:
     placeholder: 1.18.0
 
 - type: markdown
-  value: ---
+  attributes:
+    value: ---
 
 - type: textarea
   id: description

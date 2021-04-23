@@ -4,6 +4,9 @@ on:
   issues:
     types: [labeled, milestoned]
 
+env:
+  GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+
 jobs:
   assign-project:
     name: Assign to projects

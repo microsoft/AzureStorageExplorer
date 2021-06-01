@@ -26,24 +26,14 @@ body:
       placeholder: 1.19.0
     validations:
       required: true
-
-  - type: dropdown
-    id: platform
-    attributes:
-      label: Platform
-      options:
-        - Windows
-        - macOS
-        - Linux
-    validations:
-      required: true
-
+ 
   - type: input
-    id: os-version
+    id: regression
     attributes:
-      label: OS Version
-      placeholder: Windows 10; macOS Big Sur; Ubuntu 16.04
-
+      label: Regression From
+      description: Was this working in a previous version? If so, which one?
+      placeholder: 1.18.0
+ 
   - type: dropdown
     id: arch
     attributes:
@@ -58,15 +48,30 @@ body:
   - type: input
     id: build-number
     attributes:
-      label: Build Number
+      label: Storage Explorer Build Number
       description: Open the About dialog in Storage Explorer to find this.
 
-  - type: input
-    id: regression
+  - type: markdown
     attributes:
-      label: Regression From
-      description: Was this working in a previous version? If so, which one?
-      placeholder: 1.18.0
+      value: ---
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - All
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS Version
+      placeholder: Windows 10; macOS Big Sur; Ubuntu 20.04
 
   - type: markdown
     attributes:
@@ -110,4 +115,3 @@ body:
     attributes:
       label: Additional Context
       description: Add any other details, such as error messages, unusual system configurations, network restrictions, etc.
-      render: text

@@ -5,22 +5,23 @@ on:
     types: [labeled, milestoned]
 
 env:
-  GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   assign-project:
     name: Assign to projects
     runs-on: ubuntu-latest
     steps:
-      - name: Assign to Storage Explorer project
-        uses: srggrs/assign-one-project-github-action@1.2.1
+      - uses: srggrs/assign-one-project-github-action@1.2.1
+        name: Assign to Storage Explorer project
+        if: github.event.action == 'milestoned'
         with:
           project: 'https://github.com/microsoft/AzureStorageExplorer/projects/8'
           column_name: 'Committed'
           
-      - name: Assign to Globalization project
+      - uses: srggrs/assign-one-project-github-action@1.2.1
+        name: Assign to Globalization project
         if: contains(github.event.issue.labels.*.name, '🌐 localization')
-        uses: srggrs/assign-one-project-github-action@1.2.1
         with:
           project: 'https://github.com/microsoft/AzureStorageExplorer/projects/9'
           column_name: 'Committed'

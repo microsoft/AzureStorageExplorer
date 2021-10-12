@@ -15,5 +15,5 @@ jobs:
       - uses: srggrs/assign-one-project-github-action@1.2.1
         name: Assign to Storage Explorer project
         with:
-          project: 'https://github.com/microsoft/projects/140'
+          project: 'https://github.com/orgs/microsoft/projects/140'
           column_name: 'Untriaged'

@@ -1,17 +1,6 @@
 name: Report a Bug
 description: Something not working as expected? Create an issue to help us improve.
 body:
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       Preflight Checklist
-      
-  #       Before submitting a bug report, please make sure you've done the following:
-      
-  #       - [ ] I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest)
-  #       - [ ] I have checked existing resources, including the [troubleshooting guide](https://docs.microsoft.com/azure/storage/common/storage-explorer-troubleshooting) and the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases).
-  #       - [ ] I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
-
   - type: markdown
     attributes:
       value: ---

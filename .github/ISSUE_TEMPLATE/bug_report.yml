@@ -1,18 +1,16 @@
 name: Report a Bug
 description: Something not working as expected? Create an issue to help us improve.
 body:
-  - type: checkboxes
-    id: pre-flight
-    attributes:
-      label: Preflight Checklist
-      description: "Before submitting a bug report, please make sure you've done the following:"
-      options:
-        - label: I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
-          required: true
-        - label: I have checked existing resources, including the [troubleshooting guide](https://docs.microsoft.com/azure/storage/common/storage-explorer-troubleshooting) and the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases).
-          required: true
-        - label: I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
-          required: true
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       Preflight Checklist
+      
+  #       Before submitting a bug report, please make sure you've done the following:
+      
+  #       - [ ] I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest)
+  #       - [ ] I have checked existing resources, including the [troubleshooting guide](https://docs.microsoft.com/azure/storage/common/storage-explorer-troubleshooting) and the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases).
+  #       - [ ] I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
 
   - type: markdown
     attributes:
@@ -96,6 +94,12 @@ body:
     validations:
       required: true
 
+ - type: textarea
+    id: expected
+    attributes:
+      label: Expected Experience
+      description: Provide a clear, concise description of what you expected to happen. If applicable, add screenshots to help explain what you expected.
+
   - type: textarea
     id: actual
     attributes:
@@ -103,13 +107,7 @@ body:
       description: Provide a clear, concise description of what actually happens. If applicable, add screenshots to help explain what happened.
     validations:
       required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected Experience
-      description: Provide a clear, concise description of what you expected to happen. If applicable, add screenshots to help explain what you expected.
-
+ 
   - type: textarea
     id: context
     attributes:

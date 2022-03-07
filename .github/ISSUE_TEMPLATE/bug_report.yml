@@ -1,9 +1,9 @@
 name: Report a Bug
 description: Something not working as expected? Create an issue to help us improve.
 body:
-  - type: markdown
-    attributes:
-      value: ---
+  # - type: markdown
+  #   attributes:
+  #     value: ---
 
   - type: input
     id: app-version

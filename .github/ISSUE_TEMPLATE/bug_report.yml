@@ -63,7 +63,8 @@ body:
         - All
         - Windows
         - macOS
-        - Linux
+        - Linux-tar.gz
+        - Linux-snap
     validations:
       required: true
 

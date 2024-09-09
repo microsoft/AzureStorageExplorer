@@ -1,7 +1,6 @@
 # Bug Reports and Feature Requests
 
-> 🛑 **STOP** 🛑
->
+> [!IMPORTANT]
 > Storage Explorer welcomes feedback! However, we can't guarantee that we'll respond to your submissions right away. If you need assistance, _do not_ submit a bug report here! Please submit an [Azure support request].
 
 Before submitting a bug report or feature request, please follow these guidelines:

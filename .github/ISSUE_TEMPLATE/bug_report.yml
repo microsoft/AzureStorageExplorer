@@ -1,5 +1,6 @@
 name: Report a Bug
 description: Something not working as expected? Create an issue to help us improve.
+type: "Bug"
 body:
   - type: checkboxes
     id: pre-flight

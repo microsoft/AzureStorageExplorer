@@ -69,8 +69,7 @@ body:
     id: os-version
     attributes:
       label: OS Version
-      placeholder: Windows 11; macOS Sequioa 15.3.1; Ubuntu 22.04
-
+      placeholder: Windows 11; macOS Sequoia 15.3.1; Ubuntu 22.04
   - type: markdown
     attributes:
       value: ---

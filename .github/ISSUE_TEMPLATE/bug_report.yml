@@ -9,9 +9,9 @@ body:
 
         Before submitting a bug report, please make sure you've done the following:
         
-        - [ ] I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
-        - [ ] I have checked existing resources, including the [troubleshooting guide](https://docs.microsoft.com/azure/storage/common/storage-explorer-troubleshooting) and the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases).
-        - [ ] I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
+          - [ ] I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
+          - [ ] I have checked existing resources, including the [troubleshooting guide](https://docs.microsoft.com/azure/storage/common/storage-explorer-troubleshooting) and the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases).
+          - [ ] I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
         
         ---
 

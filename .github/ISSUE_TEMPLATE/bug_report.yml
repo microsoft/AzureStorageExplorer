@@ -2,22 +2,18 @@ name: Report a Bug
 description: Something not working as expected? Create an issue to help us improve.
 type: "Bug"
 body:
-  - type: checkboxes
-    id: pre-flight
-    attributes:
-      label: Preflight Checklist
-      description: "Before submitting a bug report, please make sure you've done the following:"
-      options:
-        - label: I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
-          required: true
-        - label: I have checked existing resources, including the [troubleshooting guide](https://docs.microsoft.com/azure/storage/common/storage-explorer-troubleshooting) and the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases).
-          required: true
-        - label: I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
-          required: true
-
   - type: markdown
     attributes:
-      value: ---
+      value: |
+        ## Preflight Checklist
+
+        Before submitting a bug report, please make sure you've done the following:
+        
+        - [ ] I have installed the [latest version of Storage Explorer](https://github.com/Microsoft/AzureStorageExplorer/releases/latest).
+        - [ ] I have checked existing resources, including the [troubleshooting guide](https://docs.microsoft.com/azure/storage/common/storage-explorer-troubleshooting) and the [release notes](https://github.com/microsoft/AzureStorageExplorer/releases).
+        - [ ] I have searched for [similar issues](https://github.com/Microsoft/AzureStorageExplorer/issues).
+        
+        ---
 
   - type: input
     id: app-version
@@ -41,7 +37,6 @@ body:
       label: Architecture
       description: Open the About dialog in Storage Explorer to find this.
       options:
-        - i86
         - x64
         - arm64
     validations:
@@ -69,12 +64,12 @@ body:
         - Linux (snap)
     validations:
       required: true
-
+      
   - type: input
     id: os-version
     attributes:
       label: OS Version
-      placeholder: Windows 10; macOS Big Sur; Ubuntu 20.04
+      placeholder: Windows 11; macOS Sequioa 15.3.1; Ubuntu 22.04
 
   - type: markdown
     attributes:
@@ -85,6 +80,8 @@ body:
     attributes:
       label: Bug Description
       description: Provide a clear, concise description of the bug.
+      placeholder: |
+        Describe the bug you're seeing.
     validations:
       required: true
 
@@ -104,6 +101,8 @@ body:
     attributes:
       label: Actual Experience
       description: Provide a clear, concise description of what actually happens. If applicable, add screenshots to help explain what happened.
+      placeholder: |
+        What actually happens when I follow the steps to reproduce?
     validations:
       required: true
 
@@ -112,9 +111,14 @@ body:
     attributes:
       label: Expected Experience
       description: Provide a clear, concise description of what you expected to happen. If applicable, add screenshots to help explain what you expected.
+      placeholder: |
+        What should happen when I follow the steps to reproduce?
 
   - type: textarea
     id: context
     attributes:
       label: Additional Context
       description: Add any other details, such as error messages, unusual system configurations, network restrictions, etc.
+      placeholder: |
+        Error messages, proxy configurations, system permissions, etc.
+        

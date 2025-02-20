@@ -1,8 +1,6 @@
 name: Request a Feature
 description: Have an idea that would make Storage Explorer better? Let us know!
 type: "Feature"
-labels:
-  - ":bulb: feature request"
 body:
   - type: markdown
     attributes:

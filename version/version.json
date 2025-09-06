@@ -75,9 +75,9 @@
         }
       ],
       "cleanInstall": true,
-      "releaseNotesUrl": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.39.1.md",
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/ReleaseNotes.md",
       "releaseNotesUrls": {
-        "markdown": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.39.1.md"
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/ReleaseNotes.md"
       },
       "downloadInfos": {
         "windows64": {
@@ -107,9 +107,9 @@
         }
       ],
       "cleanInstall": true,
-      "releaseNotesUrl": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.39.0.md",
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.0/ReleaseNotes.md",
       "releaseNotesUrls": {
-        "markdown": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.39.0.md"
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.0/ReleaseNotes.md"
       },
       "downloadInfos": {
         "windows64": {
@@ -144,9 +144,9 @@
         }
       ],
       "cleanInstall": true,
-      "releaseNotesUrl": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.38.0.md",
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.38.0/ReleaseNotes.md",
       "releaseNotesUrls": {
-        "markdown": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.38.0.md"
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.38.0/ReleaseNotes.md"
       },
       "downloadInfos": {
         "windows64": {
@@ -181,9 +181,9 @@
         }
       ],
       "cleanInstall": true,
-      "releaseNotesUrl": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.37.0.md",
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.37.0/ReleaseNotes.md",
       "releaseNotesUrls": {
-        "markdown": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.37.0.md"
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.37.0/ReleaseNotes.md"
       },
       "downloadInfos": {
         "windows64": {
@@ -218,9 +218,9 @@
         }
       ],
       "cleanInstall": true,
-      "releaseNotesUrl": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.36.2.md",
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.2/ReleaseNotes.md",
       "releaseNotesUrls": {
-        "markdown": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.36.2.md"
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.2/ReleaseNotes.md"
       },
       "downloadInfos": {
         "windows64": {
@@ -255,9 +255,9 @@
         }
       ],
       "cleanInstall": true,
-      "releaseNotesUrl": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.36.0.md",
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.0/ReleaseNotes.md",
       "releaseNotesUrls": {
-        "markdown": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.36.0.md"
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.0/ReleaseNotes.md"
       },
       "downloadInfos": {
         "windows64": {
@@ -292,9 +292,9 @@
         }
       ],
       "cleanInstall": true,
-      "releaseNotesUrl": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.35.0.md",
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.35.0/ReleaseNotes.md",
       "releaseNotesUrls": {
-        "markdown": "https://storage-explorer-publishing-feapcgfgbzc2cjek.b01.azurefd.net/release-notes/1.35.0.md"
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.35.0/ReleaseNotes.md"
       },
       "downloadInfos": {
         "windows64": {

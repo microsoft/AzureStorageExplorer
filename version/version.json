@@ -1,0 +1,741 @@
+{
+  "versions": [
+    {
+      "displayName": "99.99.99",
+      "version": 999999,
+      "updateGroups": [
+        {
+          "name": "CTI",
+          "percentage": 100
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "de603040d216b1e52e90b2bff6601d14b870f01386d687ea26cfcab2cace254a",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-windows-x64.exe"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "d62489f7a1e9dd649da67731bc53038679a8bf1dd5615ac1fe3b5b7b6d8de9e7",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-windows-arm64.exe"
+        },
+        "mac": {
+          "sha256Checksum": "df3dc6ae3a72afb41d9e07571a3c2abdd40a77b6d969ce71c163d570b74e987a",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-darwin-x64.zip"
+        },
+        "macArm64": {
+          "sha256Checksum": "2bc28fac10ae33f0d89cccac77c29cc3c4cd7319db92c14825a3d918822fd335",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-darwin-arm64.zip"
+        },
+        "linux": {
+          "sha256Checksum": "33d70d1e78ccadeed0b2d0ea5d6d93747657b701d15cd8012605766c79984127",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-linux-x64.tar.gz"
+        }
+      }
+    },
+    {
+      "displayName": "1.39.1",
+      "version": 107,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 100
+        },
+        {
+          "name": "98",
+          "percentage": 100
+        },
+        {
+          "name": "97",
+          "percentage": 100
+        },
+        {
+          "name": "96",
+          "percentage": 100
+        },
+        {
+          "name": "95",
+          "percentage": 100
+        },
+        {
+          "name": "94",
+          "percentage": 100
+        },
+        {
+          "name": "93",
+          "percentage": 100
+        },
+        {
+          "name": "92",
+          "percentage": 100
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "de603040d216b1e52e90b2bff6601d14b870f01386d687ea26cfcab2cace254a"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "d62489f7a1e9dd649da67731bc53038679a8bf1dd5615ac1fe3b5b7b6d8de9e7"
+        },
+        "mac": {
+          "sha256Checksum": "df3dc6ae3a72afb41d9e07571a3c2abdd40a77b6d969ce71c163d570b74e987a"
+        },
+        "macArm64": {
+          "sha256Checksum": "2bc28fac10ae33f0d89cccac77c29cc3c4cd7319db92c14825a3d918822fd335"
+        },
+        "linux": {
+          "sha256Checksum": "33d70d1e78ccadeed0b2d0ea5d6d93747657b701d15cd8012605766c79984127"
+        }
+      }
+    },
+    {
+      "displayName": "1.39.0",
+      "version": 106,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 0
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.0/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.0/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "50bcc4bccc1ad53409e3ca86344fd0c7259b570657fb57dac4aee78298454649",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.0/StorageExplorer-windows-x64.exe"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "e1bdcdcc36de153bfd6f8aab010c4a18cb247f9a3c3827842df38925b8753c69",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.0/StorageExplorer-windows-arm64.exe"
+        },
+        "mac": {
+          "sha256Checksum": "80f9f5a7de5d7c0a6395478a450621973a8cd1ca68616a50764016d5778eb5d8",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.0/StorageExplorer-darwin-x64.zip"
+        },
+        "macArm64": {
+          "sha256Checksum": "87a02b2dc26f0ab1d23dc40f0c1cc64dcfd97d32e19f010c5291a43bb23280f8",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.0/StorageExplorer-darwin-arm64.zip"
+        },
+        "linux": {
+          "sha256Checksum": "3343abbb7859f76b686d0b810942646553c79cc1d15b161467110c9a45cccf14",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.0/StorageExplorer-linux-x64.tar.gz"
+        }
+      }
+    },
+    {
+      "displayName": "1.38.0",
+      "version": 105,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 0
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.38.0/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.38.0/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "c7aa0dd5316db2347ed1b808f887ee3b7d7d33c65dbcd2de184a95c87f5380bf",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.38.0/StorageExplorer-windows-x64.exe"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "70381aad2d5d858d007a7f633ae43fc8eef6850a6f47e593e61dec814ff3e428",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.38.0/StorageExplorer-windows-arm64.exe"
+        },
+        "mac": {
+          "sha256Checksum": "d67135eba6c0802bde47cf3a7048461fc41b5ace19884e19a8afcaa67e4947a6",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.38.0/StorageExplorer-darwin-x64.zip"
+        },
+        "macArm64": {
+          "sha256Checksum": "200bbaa3c11a08add9b1238ed2445398b8ac5fb8e4d9c25ff167ea0c9cf63bb0",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.38.0/StorageExplorer-darwin-arm64.zip"
+        },
+        "linux": {
+          "sha256Checksum": "5c565be04fd05d7516b8de53cefee9135fb8257cd6f43b2dc0fd39f930b9032a",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.38.0/StorageExplorer-linux-x64.tar.gz"
+        }
+      }
+    },
+    {
+      "displayName": "1.37.0",
+      "version": 104,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 0
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.37.0/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.37.0/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "e04fa2ca676e963b8c92e5eea50323b45182e2de25aec7fe98d0324db443085f",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.37.0/StorageExplorer-windows-x64.exe"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "eb1da1a531211ee2831443e06c626cca71ea3ab26818155ec29501b34fae19fb",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.37.0/StorageExplorer-windows-arm64.exe"
+        },
+        "mac": {
+          "sha256Checksum": "d07bee7ec572772df45f2e1b2520071a91207a79cb21215a52159a3db3a3bbb4",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.37.0/StorageExplorer-darwin-x64.zip"
+        },
+        "macArm64": {
+          "sha256Checksum": "6f1ecffc19841113eae95b6e31fcee3e1b6801f6102ba9025881188e6fdcb9df",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.37.0/StorageExplorer-darwin-arm64.zip"
+        },
+        "linux": {
+          "sha256Checksum": "ab9e377dd9799c6df94a33cf10ab594b7aaef4ce88a0ddab52aae7b05ded34c0",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.37.0/StorageExplorer-linux-x64.tar.gz"
+        }
+      }
+    },
+    {
+      "displayName": "1.36.2",
+      "version": 103,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 0
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.2/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.2/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "8776a0e33d8ff04a9bbf94df991f022e826f83f7e663364219001dd78bf4faf6",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.2/StorageExplorer-windows-x64.exe"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "bee5e2a09289590e38222e6eda7f5836180e4d835e94451c2508ba55cfa46719",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.2/StorageExplorer-windows-arm64.exe"
+        },
+        "mac": {
+          "sha256Checksum": "3cfbd63999e178194a81b90f54e8fd843f727b2eea9d1099acf5e6d71a25da30",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.2/StorageExplorer-darwin-x64.zip"
+        },
+        "macArm64": {
+          "sha256Checksum": "6acf9fd2aa55b3249e1b55da1685ace687debcd773ddcdf27eb111d17b77dd7b",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.2/StorageExplorer-windows-arm64.zip"
+        },
+        "linux": {
+          "sha256Checksum": "5091fb781d7e68d59264b81bb1258ffdef3aa9d58a774028f036cf17b99c9093",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.2/StorageExplorer-linux-x64.tar.gz"
+        }
+      }
+    },
+    {
+      "displayName": "1.36.0",
+      "version": 101,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 0
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.0/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.0/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "ca63ae67c56031b6c80e42a64b331096910410ce0d7d97bce9abde9b332722d7",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.0/StorageExplorer-windows-x64.exe"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "f0faf147a92de13978fc6b75fb1d1342743bba2d33167346dbeb8bea76b50ad8",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.0/StorageExplorer-windows-arm64.exe"
+        },
+        "mac": {
+          "sha256Checksum": "91c71ee69441b5928db39ffc22246e7f468119982379d3dd2d6f48ec23bdc8c2",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.0/StorageExplorer-darwin-x64.zip"
+        },
+        "macArm64": {
+          "sha256Checksum": "9ccb01e566ae18f93d42c9643d095ad85e4ecc24f8aedd0999a6b41ce7609c57",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.0/StorageExplorer-darwin-arm64.zip"
+        },
+        "linux": {
+          "sha256Checksum": "819a256f285b4014351975026fb2cc275611ebed8922a4210376dad776a4fe8f",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.36.0/StorageExplorer-linux-x64.tar.gz"
+        }
+      }
+    },
+    {
+      "displayName": "1.35.0",
+      "version": 100,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 0
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.35.0/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.35.0/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "ff31165449e4ca13040e0bd2ab88433db945f73bcd64782b1e537bd933c6b3c5",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.35.0/StorageExplorer-windows-x64.exe"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "f01787238dee2e9245acfe05bb1c36456f51bc50bf2e1bf4118d2ce9b1959451",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.35.0/StorageExplorer-windows-arm64.exe"
+        },
+        "mac": {
+          "sha256Checksum": "c610835d3238e4432634984e0b83e4f7c194142ba5c04a5eaefc34a6ed048fdf",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.35.0/StorageExplorer-darwin-x64.zip"
+        },
+        "macArm64": {
+          "sha256Checksum": "723d9ead8ff6a563b4db294848bc589a0e4065aaf8b7f22d00c533272a7c1d32",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.35.0/StorageExplorer-darwin-arm64.zip"
+        },
+        "linux": {
+          "sha256Checksum": "5e1534da421aff2f7318655aafa6871b0db7e82a85284210a85815b0173570f9",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.35.0/StorageExplorer-linux-x64.tar.gz"
+        }
+      }
+    }
+  ],
+  "deprecations": [
+    {
+      "version": 100,
+      "displayName": "1.35.0",
+      "deprecationDate": "09/19/2025",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": false
+    },
+    {
+      "version": 99,
+      "displayName": "1.34.0",
+      "deprecationDate": "05/24/2025",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 98,
+      "displayName": "1.33.1",
+      "deprecationDate": "04/10/2025",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 97,
+      "displayName": "1.33.0",
+      "deprecationDate": "03/01/2025",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 96,
+      "displayName": "1.32.1",
+      "deprecationDate": "11/15/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 95,
+      "displayName": "1.32.0",
+      "deprecationDate": "11/01/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 94,
+      "displayName": "1.31.2",
+      "deprecationDate": "8/11/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 93,
+      "displayName": "1.31.1",
+      "deprecationDate": "8/11/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 92,
+      "displayName": "1.31.0",
+      "deprecationDate": "8/11/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 91,
+      "displayName": "1.30.2",
+      "deprecationDate": "7/21/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 90,
+      "displayName": "1.30.1",
+      "deprecationDate": "7/13/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 89,
+      "displayName": "1.30.0",
+      "deprecationDate": "6/12/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 88.5,
+      "displayName": "1.29.3",
+      "deprecationDate": "5/24/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 88,
+      "displayName": "1.29.2",
+      "deprecationDate": "5/24/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 87,
+      "displayName": "1.29.1",
+      "deprecationDate": "5/10/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 86,
+      "displayName": "1.29.0",
+      "deprecationDate": "4/28/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 85,
+      "displayName": "1.28.1",
+      "deprecationDate": "3/9/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 84,
+      "displayName": "1.28.0",
+      "deprecationDate": "2/14/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 83,
+      "displayName": "1.27.2",
+      "deprecationDate": "1/24/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 82,
+      "displayName": "1.27.1",
+      "deprecationDate": "1/24/2024",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 81,
+      "displayName": "1.27.0",
+      "deprecationDate": "12/2/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 80,
+      "displayName": "1.26.1",
+      "deprecationDate": "10/17/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 79,
+      "displayName": "1.26.0",
+      "deprecationDate": "10/5/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 78,
+      "displayName": "1.25.1",
+      "deprecationDate": "8/12/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 77,
+      "displayName": "1.25.0",
+      "deprecationDate": "8/3/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 76,
+      "displayName": "1.24.3",
+      "deprecationDate": "6/21/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 75,
+      "displayName": "1.24.2",
+      "deprecationDate": "5/27/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 74,
+      "displayName": "1.24.1",
+      "deprecationDate": "5/12/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 73,
+      "displayName": "1.24.0",
+      "deprecationDate": "5/3/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 72,
+      "displayName": "1.23.1",
+      "deprecationDate": "4/12/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 71,
+      "displayName": "1.23.0",
+      "deprecationDate": "3/2/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 70,
+      "displayName": "1.22.1",
+      "deprecationDate": "1/25/2023",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 69,
+      "displayName": "1.22.0",
+      "deprecationDate": "12/14/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 68,
+      "displayName": "1.21.3",
+      "deprecationDate": "10/25/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 67,
+      "displayName": "1.21.2",
+      "deprecationDate": "9/28/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 66,
+      "displayName": "1.21.1",
+      "deprecationDate": "9/22/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 65,
+      "displayName": "1.21.0",
+      "deprecationDate": "9/8/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 64,
+      "displayName": "1.20.1",
+      "deprecationDate": "7/23/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 63,
+      "displayName": "1.20.0",
+      "deprecationDate": "6/25/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 62,
+      "displayName": "1.19.1",
+      "deprecationDate": "4/29/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 61,
+      "displayName": "1.19.0",
+      "deprecationDate": "4/15/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 60,
+      "displayName": "1.18.1",
+      "deprecationDate": "3/4/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 59,
+      "displayName": "1.18.0",
+      "deprecationDate": "3/1/2022",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 58,
+      "displayName": "1.17.0",
+      "deprecationDate": "12/15/2021",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 57,
+      "displayName": "1.16.0",
+      "deprecationDate": "11/10/2021",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 56,
+      "displayName": "1.15.1",
+      "deprecationDate": "9/2/2021",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 55,
+      "displayName": "1.15.0",
+      "deprecationDate": "8/27/2021",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 54,
+      "displayName": "1.14.2",
+      "deprecationDate": "7/16/2021",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 53,
+      "displayName": "1.14.1",
+      "deprecationDate": "7/14/2021",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 52,
+      "displayName": "1.14.0",
+      "deprecationDate": "7/14/2021",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 51,
+      "displayName": "1.13.1",
+      "deprecationDate": "7/14/2021",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    },
+    {
+      "version": 50,
+      "displayName": "1.13.0",
+      "deprecationDate": "7/14/2021",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": true
+    }
+  ]
+}

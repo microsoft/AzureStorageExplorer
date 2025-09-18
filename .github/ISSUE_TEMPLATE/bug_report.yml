@@ -108,7 +108,7 @@ body:
       description: How are you connecting to storage resources?
       options:
         - Sign in (subscription)
-        - Attachement
+        - Attachment
 
   - type: textarea
     id: repro

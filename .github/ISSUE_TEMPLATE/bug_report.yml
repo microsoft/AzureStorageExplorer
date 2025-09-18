@@ -96,7 +96,7 @@ body:
     attributes:
       label: Authentication Method
       description: How are you authenticating with storage services?
-      option:
+      options:
         - Sign in
         - Account name and key
         - Shared access signature (SAS)
@@ -106,7 +106,7 @@ body:
     attributes:
       label: Connection Type
       description: How are you connecting to storage resources?
-      option:
+      options:
         - Sign in (subscription)
         - Attachement
 

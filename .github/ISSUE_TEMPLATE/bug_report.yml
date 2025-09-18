@@ -84,6 +84,25 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: authentication
+    attributes:
+      label: Authentication Method
+      description: How are you authenticating with storage services?
+      option:
+        - Sign in
+        - Account name and key
+        - Shared access signature (SAS)
+
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection Type
+      description: How are you connecting to storage resources?
+      option:
+        - Sign in (subscription)
+        - Attachement
+
   - type: textarea
     id: repro
     attributes:
@@ -113,11 +132,15 @@ body:
       placeholder: |
         What should happen when I follow the steps to reproduce?
 
+  - type: markdown
+    attributes:
+      - value: ---
+
   - type: textarea
     id: context
     attributes:
       label: Additional Context
-      description: Add any other details, such as error messages, unusual system configurations, network restrictions, etc.
+      description: Add any other details, such as application logs, error messages, system or proxy configurations, etc.
       placeholder: |
-        Error messages, proxy configurations, system permissions, etc.
+        Application logs, error messages, system or proxy configurations, etc.
         

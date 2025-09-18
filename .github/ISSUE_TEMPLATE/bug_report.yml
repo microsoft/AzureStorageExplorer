@@ -84,6 +84,13 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: resource-type
+    attributes:
+      label: Resource Types
+      description: "List the resources types you're trying to access"
+      placeholder: "Blobs, ALDS Gen2 Blobs, SMB File Shares, NFS File Shares, Managed Disks, Queues, Tables, etc."
+      
   - type: dropdown
     id: authentication
     attributes:
@@ -134,7 +141,7 @@ body:
 
   - type: markdown
     attributes:
-      - value: ---
+      value: ---
 
   - type: textarea
     id: context

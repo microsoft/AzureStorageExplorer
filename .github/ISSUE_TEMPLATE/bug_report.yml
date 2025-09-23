@@ -84,6 +84,32 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: resource-type
+    attributes:
+      label: Resource Types
+      description: "List the resources types you're trying to access"
+      placeholder: "Blobs, ALDS Gen2 Blobs, SMB File Shares, NFS File Shares, Managed Disks, Queues, Tables, etc."
+      
+  - type: dropdown
+    id: authentication
+    attributes:
+      label: Authentication Method
+      description: How are you authenticating with storage services?
+      options:
+        - Sign in
+        - Account name and key
+        - Shared access signature (SAS)
+
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection Type
+      description: How are you connecting to storage resources?
+      options:
+        - Sign in (subscription)
+        - Attachment
+
   - type: textarea
     id: repro
     attributes:
@@ -113,11 +139,15 @@ body:
       placeholder: |
         What should happen when I follow the steps to reproduce?
 
+  - type: markdown
+    attributes:
+      value: ---
+
   - type: textarea
     id: context
     attributes:
       label: Additional Context
-      description: Add any other details, such as error messages, unusual system configurations, network restrictions, etc.
+      description: Add any other details, such as application logs, error messages, system or proxy configurations, etc.
       placeholder: |
-        Error messages, proxy configurations, system permissions, etc.
+        Application logs, error messages, system or proxy configurations, etc.
         

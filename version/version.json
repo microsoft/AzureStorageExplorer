@@ -81,19 +81,19 @@
       },
       "downloadInfos": {
         "windows64": {
-          "sha256Checksum": "de603040d216b1e52e90b2bff6601d14b870f01386d687ea26cfcab2cace254a"
+          "sha256Checksum": "8794cdb20f7da70a5b5e848eaec824476d22ced20bae5bc24d4c6e88f7015a26"
         },
         "windowsArm64": {
-          "sha256Checksum": "d62489f7a1e9dd649da67731bc53038679a8bf1dd5615ac1fe3b5b7b6d8de9e7"
+          "sha256Checksum": "0bf2d13223a78fdddc1ec67d5e7c703cdaa3fc270ee469252e3437bcea87dc75"
         },
         "mac": {
-          "sha256Checksum": "df3dc6ae3a72afb41d9e07571a3c2abdd40a77b6d969ce71c163d570b74e987a"
+          "sha256Checksum": "bd781e5f137a24414071dd34f5ec2f4f72ae8c50b810e69cd52f408dc58a7957"
         },
         "macArm64": {
-          "sha256Checksum": "2bc28fac10ae33f0d89cccac77c29cc3c4cd7319db92c14825a3d918822fd335"
+          "sha256Checksum": "45e657a6e4b8bd6333e1fd3fa2371de048d71515b9be9ef581742906d3fb4750"
         },
         "linux": {
-          "sha256Checksum": "33d70d1e78ccadeed0b2d0ea5d6d93747657b701d15cd8012605766c79984127"
+          "sha256Checksum": "94ad468f10d052f248b7c7495ee6657330a8edeb9b7f7b05cae12da13a923f37"
         }
       }
     },

@@ -104,7 +104,7 @@
         {
           "name": "default",
           "percentage": 0
-        },
+        }
       ],
       "cleanInstall": true,
       "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/ReleaseNotes.md",
@@ -327,7 +327,7 @@
       "deprecationDate": "10/29/2025",
       "messageLevel": "info",
       "includePreviousVersionsMessage": false,
-      "alwaysShow": false,
+      "alwaysShow": false
     },
     {
       "version": 101,
@@ -335,7 +335,7 @@
       "deprecationDate": "10/14/2025",
       "messageLevel": "info",
       "includePreviousVersionsMessage": false,
-      "alwaysShow": false,
+      "alwaysShow": false
     },
     {
       "version": 100,

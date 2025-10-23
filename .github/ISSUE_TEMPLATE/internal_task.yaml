@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        For internal use only. Please use templates to submit feature requests or bug reports.
+        For internal use only. Please use other templates to submit feature requests or bug reports.
   - type: textarea
     id: note
     attributes:

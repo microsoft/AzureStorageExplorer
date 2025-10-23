@@ -1,0 +1,15 @@
+name: "🔒 Internal Task"
+description: "For internal use only."
+labels: ["internal"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For internal use only. Please use templates to submit feature requests or bug reports.
+  - type: textarea
+    id: note
+    attributes:
+      label: Description
+    validations:
+      required: false

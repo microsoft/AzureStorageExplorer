@@ -37,9 +37,9 @@
         }
       }
     },
-    {
-      "displayName": "1.40.1",
-      "version": 109,
+        {
+      "displayName": "1.40.2",
+      "version": 110,
       "updateGroups": [
         {
           "name": "default",
@@ -75,25 +75,25 @@
         }
       ],
       "cleanInstall": true,
-      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.40.1/ReleaseNotes.md",
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.40.2/ReleaseNotes.md",
       "releaseNotesUrls": {
-        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.40.1/ReleaseNotes.md"
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.40.2/ReleaseNotes.md"
       },
       "downloadInfos": {
         "windows64": {
-          "sha256Checksum": "80f95113051da723ef2b69d4e732c55ef6acdbb1fb80b0c3eb0606a2b53018fb"
+          "sha256Checksum": ""
         },
         "windowsArm64": {
-          "sha256Checksum": "7f83ab7b7517fbd59f35f9033dd2ed4ef57314df41d8144e4521215cab31a774"
+          "sha256Checksum": ""
         },
         "mac": {
-          "sha256Checksum": "5d03bac1128e109b42311a554bc419344097a45efee675c7c6d158d3ef85e348"
+          "sha256Checksum": ""
         },
         "macArm64": {
-          "sha256Checksum": "5f9a8034d9deab71234ba00bda702c36ec2d0c67b8bda011a43441f1decc3115"
+          "sha256Checksum": ""
         },
         "linux": {
-          "sha256Checksum": "947a738b0e64357e37c8905e3bb07705427ed6fe1826bb3a024c87f7f96e3431"
+          "sha256Checksum": ""
         }
       }
     },

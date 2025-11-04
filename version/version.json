@@ -38,8 +38,8 @@
       }
     },
     {
-      "displayName": "1.40.1",
-      "version": 109,
+      "displayName": "1.40.2",
+      "version": 110,
       "updateGroups": [
         {
           "name": "default",
@@ -71,6 +71,38 @@
         },
         {
           "name": "92",
+          "percentage": 0
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.40.2/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.40.2/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "fc44425058cafca14c542e2bf4d21f21865bfce6f413bd6d5173a8f07f08769f"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "594f215283d7aa9268da0e661d549505583e2629ce5f790294ec8edca3904ac5"
+        },
+        "mac": {
+          "sha256Checksum": "8063b2dea5b73878ed119b6be600dbf8e84d86223cf037aa9eafd6fc8752a891"
+        },
+        "macArm64": {
+          "sha256Checksum": "bb455a692e7498da57b563746d7b5b016db9581e4eb2f93719a6c2f59bb0f12f"
+        },
+        "linux": {
+          "sha256Checksum": "9b0b6e4ca4603a1cc4799ea92643a2b78ea279bfc16bc3f80959fa19c374368d"
+        }
+      }
+    },
+    {
+      "displayName": "1.40.1",
+      "version": 109,
+      "updateGroups": [
+        {
+          "name": "default",
           "percentage": 0
         }
       ],

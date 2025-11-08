@@ -43,35 +43,35 @@
       "updateGroups": [
         {
           "name": "default",
-          "percentage": 25
+          "percentage": 75
         },
         {
           "name": "98",
-          "percentage": 25
+          "percentage": 75
         },
         {
           "name": "97",
-          "percentage": 25
+          "percentage": 75
         },
         {
           "name": "96",
-          "percentage": 25
+          "percentage": 75
         },
         {
           "name": "95",
-          "percentage": 25
+          "percentage": 75
         },
         {
           "name": "94",
-          "percentage": 25
+          "percentage": 75
         },
         {
           "name": "93",
-          "percentage": 25
+          "percentage": 75
         },
         {
           "name": "92",
-          "percentage": 25
+          "percentage": 75
         }
       ],
       "cleanInstall": true,

@@ -433,6 +433,14 @@
   ],
   "deprecations": [
     {
+      "version": 104,
+      "displayName": "1.37.0",
+      "deprecationDate": "01/06/2025",
+      "messageLevel": "info",
+      "includePreviousVersionsMessage": false,
+      "alwaysShow": false
+    },
+    {
       "version": 103,
       "displayName": "1.36.2",
       "deprecationDate": "10/29/2025",

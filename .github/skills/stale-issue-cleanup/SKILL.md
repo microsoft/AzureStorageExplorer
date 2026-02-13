@@ -31,7 +31,7 @@ An issue is stale when ALL of the following are true:
 Run this command to get the list of Storage Explorer team member logins:
 
 ```
-gh api /orgs/microsoft/teams/azure-storage-explorer/members --jq '.[].login'
+gh api --paginate /orgs/microsoft/teams/azure-storage-explorer/members --jq '.[].login'
 ```
 
 Store these logins for comparison throughout the process.
@@ -50,7 +50,7 @@ gh api graphql -f query='
         title
         updatedAt
         issueType { name }
-        labels(first: 10) {
+        labels(first: 50) {
           nodes { name }
         }
         comments(last: 1) {

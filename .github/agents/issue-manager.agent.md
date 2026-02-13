@@ -25,7 +25,7 @@ The members of the `microsoft/azure-storage-explorer` GitHub team can be
 fetched with:
 
 ```
-gh api /orgs/microsoft/teams/azure-storage-explorer/members --jq '.[].login'
+gh api --paginate /orgs/microsoft/teams/azure-storage-explorer/members --jq '.[].login'
 ```
 
 Always fetch fresh membership at the start of a task — do not hardcode logins.

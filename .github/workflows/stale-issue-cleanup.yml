@@ -1,0 +1,51 @@
+name: Stale Issue Cleanup
+
+# Authentication:
+#   This workflow requires a token with issues:write and read:org scopes.
+#   For experimentation, use a PAT stored as STALE_ISSUES_TOKEN repo secret.
+#   For production, replace with a GitHub App token to avoid manual renewal:
+#     - Register one "Storage Explorer Automation" GitHub App in the microsoft org
+#     - Grant it issues:write and members:read permissions
+#     - Install it on this repo (and any other repos your agents need)
+#     - Use actions/create-github-app-token to generate tokens at runtime
+#     - One app can serve all agent workflows
+
+on:
+  schedule:
+    # Every other Monday at 9:00 AM UTC (biweekly)
+    - cron: '0 9 1,15 * *'
+  workflow_dispatch: # Allow manual triggers
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Agency
+        run: |
+          curl -sSfL https://aka.ms/InstallTool.sh | sh -s agency
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Run stale issue cleanup agent
+        env:
+          GITHUB_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
+        run: |
+          agency copilot \
+            --agent issue-manager \
+            --prompt "Find and close stale bug issues." \
+            --allow-all-tools \
+            --share stale-cleanup-log.md
+
+      - name: Upload session log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stale-cleanup-log-${{ github.run_id }}
+          path: stale-cleanup-log.md
+          retention-days: 30

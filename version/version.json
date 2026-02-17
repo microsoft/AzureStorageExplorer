@@ -38,40 +38,12 @@
       }
     },
     {
-      "displayName": "1.41.0",
-      "version": 111,
+      "displayName": "1.41.1",
+      "version": 112,
       "updateGroups": [
         {
           "name": "default",
-          "percentage": 100
-        },
-        {
-          "name": "98",
-          "percentage": 100
-        },
-        {
-          "name": "97",
-          "percentage": 100
-        },
-        {
-          "name": "96",
-          "percentage": 100
-        },
-        {
-          "name": "95",
-          "percentage": 100
-        },
-        {
-          "name": "94",
-          "percentage": 100
-        },
-        {
-          "name": "93",
-          "percentage": 100
-        },
-        {
-          "name": "92",
-          "percentage": 100
+          "percentage": 0
         }
       ],
       "cleanInstall": true,
@@ -81,19 +53,56 @@
       },
       "downloadInfos": {
         "windows64": {
-          "sha256Checksum": "380e09264282cb0b1c84f2d13bfbbebd6d48d66f522414ecedaa544e8cf5003f"
+          "sha256Checksum": "8fddc37e3032dae43875325af0da75fb69153cdef66602061cd409ca8e6fad42"
         },
         "windowsArm64": {
-          "sha256Checksum": "3bc2988dff9791b92769e05673dd415d681ca2dce705ae44063977ad3449f298"
+          "sha256Checksum": "d84a31ac16c3d5a709ded4b6520b09635420547db084ac50a3d7b14a4cd6f857"
         },
         "mac": {
-          "sha256Checksum": "2e37c45302afbe03cb2e34f3c5bf9336e4f2b80dae15f06a1a8046113d0a6b99"
+          "sha256Checksum": "76325654299cecdafde4235b0205e9cedc794883473a0e402cfd01e24e147095"
         },
         "macArm64": {
-          "sha256Checksum": "a3772941c376024029ce99795ec4c0a90894cc9b2d31142080af1c820ebe24a5"
+          "sha256Checksum": "2b9dbf310c36decf781c17630429a98cac46f48c731b8363da0283f75a2fe416"
         },
         "linux": {
-          "sha256Checksum": "fff049f41a32b50084f3eecf8040cdd49fe18648f0e0b85e1731cfbccd929457"
+          "sha256Checksum": "5d4a560788f35cb40f8e74323dd5665e4a468bf435f84c51a6013fb0441ff67b"
+        }
+      }
+    },
+    {
+      "displayName": "1.41.0",
+      "version": 111,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 0
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.41.0/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.41.0/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "380e09264282cb0b1c84f2d13bfbbebd6d48d66f522414ecedaa544e8cf5003f",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.41.0/StorageExplorer-windows-x64.exe"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "3bc2988dff9791b92769e05673dd415d681ca2dce705ae44063977ad3449f298",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.41.0/StorageExplorer-windows-arm64.exe"
+        },
+        "mac": {
+          "sha256Checksum": "2e37c45302afbe03cb2e34f3c5bf9336e4f2b80dae15f06a1a8046113d0a6b99",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.41.0/StorageExplorer-mac-x64.zip"
+        },
+        "macArm64": {
+          "sha256Checksum": "a3772941c376024029ce99795ec4c0a90894cc9b2d31142080af1c820ebe24a5",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.41.0/StorageExplorer-mac-arm64.zip"
+        },
+        "linux": {
+          "sha256Checksum": "fff049f41a32b50084f3eecf8040cdd49fe18648f0e0b85e1731cfbccd929457",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.41.0/StorageExplorer-linux-x64.tar.gz"
         }
       }
     },

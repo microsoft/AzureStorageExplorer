@@ -36,11 +36,12 @@ jobs:
 
       - name: Run stale issue cleanup agent
         env:
-          GITHUB_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
+          GH_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
         run: |
           agency copilot \
             --agent issue-manager \
             --prompt "Find and close stale bug issues." \
+            --allow-all-tools \
             --share stale-cleanup-log.md
 
       - name: Upload session log

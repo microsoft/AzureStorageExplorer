@@ -2,40 +2,27 @@ name: Stale Issue Cleanup
 
 # # Authentication
 #
-# This workflow uses two tokens for two different purposes:
+# This workflow uses a single token, `STALE_ISSUES_TOKEN`, for all operations.
 #
-# 1. `github.token` (the built-in Actions token, controlled by the `permissions` block below)
-#    - `models: read`  — lets `agency copilot` call the GitHub Copilot/Models API for AI inference
-#    - `issues: write` — lets the agent comment on and close issues
-#    - `contents: read` — lets the agent read repository files (e.g., agent/skill definitions)
+# `STALE_ISSUES_TOKEN` is a Classic PAT with the following scopes:
 #
-#    Passed as `COPILOT_GITHUB_TOKEN` so that `agency copilot` uses it specifically for
-#    Copilot model auth. The tool checks env vars in this priority order:
-#    `COPILOT_GITHUB_TOKEN` → `GH_TOKEN` → `GITHUB_TOKEN`
+# - `repo` — lets the gh CLI comment on and close issues
+# - `read:org` — required to list members of the microsoft/azure-storage-explorer team
+# - `copilot` — required by the Copilot CLI for model inference (this is why github.token
+#   cannot be used: it is a machine installation token, not a user PAT, and
+#.  the Copilot CLI rejects it regardless of any `permissions` block settings)
+# - `project` — required to update the Resolution field on the org-level project
 #
-#    By setting `COPILOT_GITHUB_TOKEN`, we ensure `github.token` (which has `models:read`)
-#    is used for Copilot inference, and `GH_TOKEN` (`STALE_ISSUES_TOKEN`) is reserved for the
-#    gh CLI's GitHub API calls. If `COPILOT_GITHUB_TOKEN` were not set, the tool would try
-#    `GH_TOKEN` first — and since `STALE_ISSUES_TOKEN` doesn't have Copilot API access, auth
-#    would fail even though a valid token for Copilot is available.
+# `read:org` and `project` are org-level scopes that cannot be granted to github.token via
+# the workflow `permissions` block, which is why an external PAT is always required here.
 #
-# 2. `STALE_ISSUES_TOKEN` secret (a PAT or GitHub App token stored as a repo secret)
-#    - `read:org` — required to list members of the microsoft/azure-storage-explorer
-#      GitHub team. This is an organization-scoped permission that the `permissions` block
-#      cannot grant to `github.token` — you cannot add it to the `permissions` block no matter
-#      what you put there.
-#    - `read:project` — required to look up project item IDs on the org-level project
-#    - `project` — required to update the Resolution field on the org-level project
+# Because `GH_TOKEN` is set to this PAT, both the Copilot CLI (for model inference) and the
+# gh CLI (for GitHub API calls) pick it up automatically.
 #
-#    These are org-level permissions that must come from an external token (PAT or App).
-#
-# For experimentation, use a PAT stored as `STALE_ISSUES_TOKEN` repo secret.
-# For production, replace with a GitHub App token to avoid manual renewal:
-# - Register one "Storage Explorer Automation" GitHub App in the microsoft org
-# - Grant it `members:read` and `projects:write` permissions
-# - Install it on this repo (and any other repos your agents need)
-# - Use `actions/create-github-app-token` to generate tokens at runtime
-# - One app can serve all agent workflows
+# For production, consider replacing this PAT with a GitHub App token for the gh CLI calls
+# (org membership, issue operations, project updates), using `actions/create-github-app-token`.
+# Note that a GitHub App cannot hold a Copilot seat, so Copilot inference will always require
+# a user PAT with the `copilot` scope.
 #
 # # Install Step Note
 #
@@ -48,7 +35,6 @@ on:
   workflow_dispatch: # Allow manual triggers
 
 permissions:
-  issues: write
   contents: read
   models: read
 
@@ -66,7 +52,6 @@ jobs:
 
       - name: Run stale issue cleanup agent
         env:
-          COPILOT_GITHUB_TOKEN: ${{ github.token }}
           GH_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
         run: |
           copilot \

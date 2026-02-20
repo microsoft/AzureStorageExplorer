@@ -39,10 +39,8 @@ name: Stale Issue Cleanup
 #
 # # Install Step Note
 #
-# The "Install Agency" step downloads from aka.ms/InstallTool.sh. GitHub's hosted runners
-# have unrestricted outbound internet access to public URLs, so this URL is reachable.
-# The script downloads the `agency` binary from its release host; as long as that host is
-# a public URL (GitHub releases, CDN, etc.) it will also be reachable.
+# The "Install Copilot CLI" step downloads from gh.io/copilot-install, which is a public
+# GitHub URL that completes in ~3 seconds on GitHub-hosted runners.
 
 on:
   schedule:
@@ -61,9 +59,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Agency
+      - name: Install Copilot CLI
         run: |
-          curl -fsSL https://aka.ms/InstallTool.sh | sh -s agency
+          curl -fsSL https://gh.io/copilot-install | bash
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Run stale issue cleanup agent
@@ -71,7 +69,7 @@ jobs:
           COPILOT_GITHUB_TOKEN: ${{ github.token }}
           GH_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
         run: |
-          agency copilot \
+          copilot \
             --agent issue-manager \
             --prompt "Find and close stale bug issues." \
             --allow-all-tools \

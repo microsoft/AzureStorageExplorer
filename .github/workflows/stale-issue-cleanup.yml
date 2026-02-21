@@ -49,6 +49,16 @@ jobs:
           curl -fsSL https://gh.io/copilot-install | bash
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
+      - name: Diagnostics
+        env:
+          GH_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
+        run: |
+          echo "Token prefix: ${GH_TOKEN:0:12}"
+          echo "Token length: ${#GH_TOKEN}"
+          copilot --version
+          echo '--- gh auth status ---'
+          gh auth status
+
       - name: Run stale issue cleanup agent
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}

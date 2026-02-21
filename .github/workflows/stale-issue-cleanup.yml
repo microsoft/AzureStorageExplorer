@@ -2,27 +2,42 @@ name: Stale Issue Cleanup
 
 # # Authentication
 #
-# This workflow uses a single token, `STALE_ISSUES_TOKEN`, for all operations.
+# This workflow uses two secrets:
 #
-# `STALE_ISSUES_TOKEN` is a Classic PAT with the following scopes:
+# 1. `COPILOT_TOKEN` — a Fine-Grained Personal Access Token for Copilot model inference
 #
-# - `repo` — lets the gh CLI comment on and close issues
-# - `read:org` — required to list members of the microsoft/azure-storage-explorer team
-# - `copilot` — required by the Copilot CLI for model inference (this is why github.token
-#   cannot be used: it is a machine installation token, not a user PAT, and
-#.  the Copilot CLI rejects it regardless of any `permissions` block settings)
-# - `project` — required to update the Resolution field on the org-level project
+#    The Copilot CLI (v0.0.413+) accepts only OAuth tokens or Fine-Grained PATs
+#    (prefix: github_pat_). Classic PATs (prefix: ghp_) are rejected with
+#    "No authentication information found" regardless of which env var they are placed in
+#    or whether they have the `copilot` scope.
 #
-# `read:org` and `project` are org-level scopes that cannot be granted to github.token via
-# the workflow `permissions` block, which is why an external PAT is always required here.
+#    To create this token:
 #
-# Because `GH_TOKEN` is set to this PAT, both the Copilot CLI (for model inference) and the
-# gh CLI (for GitHub API calls) pick it up automatically.
+#    - Go to github.com/settings/personal-access-tokens/new
+#    - Resource owner: your personal account
+#    - Repository access: None (no repository permissions needed)
+#    - Expiration: set as appropriate
+#    - Account permissions: Copilot Requests -> Read-only
+#    - Store as `COPILOT_TOKEN` repo secret
 #
-# For production, consider replacing this PAT with a GitHub App token for the gh CLI calls
-# (org membership, issue operations, project updates), using `actions/create-github-app-token`.
-# Note that a GitHub App cannot hold a Copilot seat, so Copilot inference will always require
-# a user PAT with the `copilot` scope.
+# 2. `STALE_ISSUES_TOKEN` — a Classic PAT for GitHub CLI API calls
+#
+#    Fine-Grained PATs in the microsoft org require org owner approval, so a Classic PAT
+#    is used for org-level operations. Required scopes:
+#
+#    - `read:org` — list members of the microsoft/azure-storage-explorer team
+#    - `project` — update the Resolution field on the org-level project
+#    - `repo` — comment on and close issues
+#
+# PATs are a temporary onboarding mechanism. For production, consider replacing with a
+# GitHub App token to avoid manual renewal:
+#
+# - Register a "Storage Explorer Automation" GitHub App in the microsoft org
+# - Grant it `members:read` and `projects:write` permissions
+# - Install it on this repo
+# - Use `actions/create-github-app-token` to generate tokens at runtime
+#   Note: a GitHub App cannot hold a Copilot seat, so COPILOT_TOKEN will always require
+#   a personal Fine-Grained PAT.
 #
 # # Install Step Note
 #

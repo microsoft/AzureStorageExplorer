@@ -51,10 +51,9 @@ jobs:
 
       - name: Run stale issue cleanup agent
         env:
+          COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
           STALE_ISSUES_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
         run: |
-          echo "$STALE_ISSUES_TOKEN" | gh auth login --with-token
-          export GH_TOKEN="$STALE_ISSUES_TOKEN"
           copilot \
             --agent issue-manager \
             --prompt "Find and close stale bug issues." \

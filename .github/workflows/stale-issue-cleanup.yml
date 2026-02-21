@@ -49,6 +49,20 @@ jobs:
           curl -fsSL https://gh.io/copilot-install | bash
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
+      - name: Verify token (diagnostic - remove after first successful run)
+        env:
+          GH_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
+        run: |
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: token $GH_TOKEN" \
+            https://api.github.com/user)
+          echo "GitHub API /user HTTP status: $HTTP_STATUS"
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "::error::STALE_ISSUES_TOKEN is invalid (HTTP $HTTP_STATUS). Please update the repo secret with a fresh PAT."
+            exit 1
+          fi
+          echo "Token is valid."
+
       - name: Run stale issue cleanup agent
         env:
           GH_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}

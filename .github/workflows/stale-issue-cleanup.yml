@@ -67,7 +67,7 @@ jobs:
       - name: Run stale issue cleanup agent
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
-          STALE_ISSUES_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
+          GH_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
         run: |
           copilot \
             --agent issue-manager \

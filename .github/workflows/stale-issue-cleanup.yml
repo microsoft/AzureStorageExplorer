@@ -1,17 +1,48 @@
 name: Stale Issue Cleanup
 
-# Authentication:
-#   This workflow requires a token with the following scopes:
-#     - issues:write (to comment on and close issues)
-#     - read:org (to read team membership)
-#     - read:project and project (to update the Resolution project field)
-#   For experimentation, use a PAT stored as STALE_ISSUES_TOKEN repo secret.
-#   For production, replace with a GitHub App token to avoid manual renewal:
-#     - Register one "Storage Explorer Automation" GitHub App in the microsoft org
-#     - Grant it issues:write, members:read, and projects:write permissions
-#     - Install it on this repo (and any other repos your agents need)
-#     - Use actions/create-github-app-token to generate tokens at runtime
-#     - One app can serve all agent workflows
+# # Authentication
+#
+# This workflow uses two secrets:
+#
+# 1. `COPILOT_TOKEN` — a Fine-Grained Personal Access Token for Copilot model inference
+#
+#    The Copilot CLI (v0.0.413+) accepts only OAuth tokens or Fine-Grained PATs
+#    (prefix: github_pat_). Classic PATs (prefix: ghp_) are rejected with
+#    "No authentication information found" regardless of which env var they are placed in
+#    or whether they have the `copilot` scope.
+#
+#    To create this token:
+#
+#    - Go to github.com/settings/personal-access-tokens/new
+#    - Resource owner: your personal account
+#    - Repository access: None (no repository permissions needed)
+#    - Expiration: set as appropriate
+#    - Account permissions: Copilot Requests -> Read-only
+#    - Store as `COPILOT_TOKEN` repo secret
+#
+# 2. `STALE_ISSUES_TOKEN` — a Classic PAT for GitHub CLI API calls
+#
+#    Fine-Grained PATs in the microsoft org require org owner approval, so a Classic PAT
+#    is used for org-level operations. Required scopes:
+#
+#    - `read:org` — list members of the microsoft/azure-storage-explorer team
+#    - `project` — update the Resolution field on the org-level project
+#    - `repo` — comment on and close issues
+#
+# PATs are a temporary onboarding mechanism. For production, consider replacing with a
+# GitHub App token to avoid manual renewal:
+#
+# - Register a "Storage Explorer Automation" GitHub App in the microsoft org
+# - Grant it `members:read` and `projects:write` permissions
+# - Install it on this repo
+# - Use `actions/create-github-app-token` to generate tokens at runtime
+#   Note: a GitHub App cannot hold a Copilot seat, so COPILOT_TOKEN will always require
+#   a personal Fine-Grained PAT.
+#
+# # Install Step Note
+#
+# The "Install Copilot CLI" step downloads from gh.io/copilot-install, which is a public
+# GitHub URL that completes in ~3 seconds on GitHub-hosted runners.
 
 on:
   schedule:
@@ -19,7 +50,6 @@ on:
   workflow_dispatch: # Allow manual triggers
 
 permissions:
-  issues: write
   contents: read
 
 jobs:
@@ -29,16 +59,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Agency
+      - name: Install Copilot CLI
         run: |
-          curl -sSfL https://aka.ms/InstallTool.sh | sh -s agency
+          curl -fsSL https://gh.io/copilot-install | bash
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Run stale issue cleanup agent
         env:
+          COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_TOKEN }}
           GH_TOKEN: ${{ secrets.STALE_ISSUES_TOKEN }}
         run: |
-          agency copilot \
+          copilot \
             --agent issue-manager \
             --prompt "Find and close stale bug issues." \
             --allow-all-tools \

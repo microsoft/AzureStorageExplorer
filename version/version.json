@@ -43,10 +43,10 @@
       "updateGroups": [
         {
           "name": "default",
-          "percentage": 50
+          "percentage": 100
         }
       ],
-      "cleanInstall": true,
+      "cleanInstall": false,
       "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/ReleaseNotes.md",
       "releaseNotesUrls": {
         "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/ReleaseNotes.md"

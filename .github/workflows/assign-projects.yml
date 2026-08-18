@@ -12,14 +12,14 @@ jobs:
     name: Assign to projects
     runs-on: ubuntu-latest
     steps:
-      - uses: srggrs/assign-one-project-github-action@1.2.1
+      - uses: srggrs/assign-one-project-github-action@42352f30e8f3608e29350741411ab7061c953972 # 1.2.1
         name: Assign to Storage Explorer project
         if: github.event.action == 'milestoned'
         with:
           project: 'https://github.com/microsoft/AzureStorageExplorer/projects/8'
           column_name: 'Committed'
           
-      - uses: srggrs/assign-one-project-github-action@1.2.1
+      - uses: srggrs/assign-one-project-github-action@42352f30e8f3608e29350741411ab7061c953972 # 1.2.1
         name: Assign to Globalization project
         if: contains(github.event.issue.labels.*.name, '🌐 localization')
         with:

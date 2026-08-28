@@ -10,38 +10,38 @@
         }
       ],
       "cleanInstall": true,
-      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/ReleaseNotes.md",
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/ReleaseNotes.md",
       "releaseNotesUrls": {
-        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/ReleaseNotes.md"
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/ReleaseNotes.md"
       },
       "downloadInfos": {
         "windows64": {
-          "sha256Checksum": "de603040d216b1e52e90b2bff6601d14b870f01386d687ea26cfcab2cace254a",
-          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-windows-x64.exe"
+          "sha256Checksum": "040142eb21fe02927e394e63360b76cccff1ce1782723ccc361b4bf8d3b4ccf8",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/StorageExplorer-windows-x64.exe"
         },
         "windowsArm64": {
-          "sha256Checksum": "d62489f7a1e9dd649da67731bc53038679a8bf1dd5615ac1fe3b5b7b6d8de9e7",
-          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-windows-arm64.exe"
+          "sha256Checksum": "2ce1c60d30b804f37ae9efca1c9bddca6963284ab176c611b69d23ddcbfaef83",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/StorageExplorer-windows-arm64.exe"
         },
         "mac": {
-          "sha256Checksum": "df3dc6ae3a72afb41d9e07571a3c2abdd40a77b6d969ce71c163d570b74e987a",
-          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-darwin-x64.zip"
+          "sha256Checksum": "ccc1aacf43dcdab98b35d9cdf82bc185572399045e1f6e94e2ab6d2045dbfbcd",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/StorageExplorer-darwin-x64.zip"
         },
         "macPkg": {
           "sha256Checksum": "52f9573783d80866c5b4d621867ad7cb8b246c7abef1b676f39f018b5960bc09",
           "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/StorageExplorer-darwin-x64.pkg"
         },
         "macArm64": {
-          "sha256Checksum": "2bc28fac10ae33f0d89cccac77c29cc3c4cd7319db92c14825a3d918822fd335",
-          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-darwin-arm64.zip"
+          "sha256Checksum": "5750a3d17014c3185c433dc1f8fbddbd4d486758ea2ecc144c66e50b58199b22",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/StorageExplorer-darwin-arm64.zip"
         },
         "macArm64Pkg": {
           "sha256Checksum": "c36b545d9b2f9e48ac1ab8fb08dde63f1e86995a48efe83c1b1790e87ab8aeb2",
           "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/StorageExplorer-darwin-arm64.pkg"
         },
         "linux": {
-          "sha256Checksum": "33d70d1e78ccadeed0b2d0ea5d6d93747657b701d15cd8012605766c79984127",
-          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.39.1/StorageExplorer-linux-x64.tar.gz"
+          "sha256Checksum": "670d59f28b4055a9153ce37e6e9d94b183ca4722d2d964f7589f6d0be30450ac",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.45.0/StorageExplorer-linux-x64.tar.gz"
         }
       }
     },

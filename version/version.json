@@ -51,7 +51,7 @@
       "updateGroups": [
         {
           "name": "default",
-          "percentage": 50
+          "percentage": 100
         }
       ],
       "cleanInstall": true,

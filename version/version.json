@@ -67,19 +67,19 @@
           "sha256Checksum": "b1bf59cab15f7e30e0f7a0dc76aa371f1140f726f04965720153d299d344ce3b"
         },
         "mac": {
-          "sha256Checksum": "1aa233909925fb8ce1444a43c1b7b42136b2175d0c5a9831c5728818fe145a00"
+          "sha256Checksum": "1ca27c348c9329942e37be4cb2752096bec868e3c6735e42ab009edd4368d219"
         },
         "macPkg": {
-          "sha256Checksum": "51abf06c3066aff73b539727391430b9e99ab14087779db7606e02c4837d0798"
+          "sha256Checksum": "50ef3b714d683808c4e7de9b491995c035dd44869bb47984464eb007b08d4be8"
         },
         "macArm64": {
-          "sha256Checksum": "3c3aa4eeb682b0ff0f8f0967cf852685343300eeebe9c22b36bb89e1357c46a3"
+          "sha256Checksum": "0cb7ea66a0740c1e3aee79e3229dcd566b151c91777edd95e17c33db39ecd1f1"
         },
         "macArm64Pkg": {
-          "sha256Checksum": "8f8e0508846284ac7bff004b19ee79d22b316f757982bb5bcb06df6dd9eba477"
+          "sha256Checksum": "83637f0758c91c3a192b6c2c2c003f98d3a0d70c26859edf1722d44cd47a9391"
         },
         "linux": {
-          "sha256Checksum": "63bad21e311b01cae4203cda591e88182543c9342cbfc842949b37daf398fa09"
+          "sha256Checksum": "b25c0c3194c9d72f8f0c430a735d3dace1c645375bb670b59505f5c052b0e296"
         }
       }
     },

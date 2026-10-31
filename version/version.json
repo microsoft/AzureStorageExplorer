@@ -46,12 +46,50 @@
       }
     },
     {
+      "displayName": "1.47.0",
+      "version": 118,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 25
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "6b2aa7962a40b3b8e9997d09899ead89b300434369652f7316acdccab4a63423"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "b1bf59cab15f7e30e0f7a0dc76aa371f1140f726f04965720153d299d344ce3b"
+        },
+        "mac": {
+          "sha256Checksum": "1ca27c348c9329942e37be4cb2752096bec868e3c6735e42ab009edd4368d219"
+        },
+        "macPkg": {
+          "sha256Checksum": "50ef3b714d683808c4e7de9b491995c035dd44869bb47984464eb007b08d4be8"
+        },
+        "macArm64": {
+          "sha256Checksum": "0cb7ea66a0740c1e3aee79e3229dcd566b151c91777edd95e17c33db39ecd1f1"
+        },
+        "macArm64Pkg": {
+          "sha256Checksum": "83637f0758c91c3a192b6c2c2c003f98d3a0d70c26859edf1722d44cd47a9391"
+        },
+        "linux": {
+          "sha256Checksum": "b25c0c3194c9d72f8f0c430a735d3dace1c645375bb670b59505f5c052b0e296"
+        }
+      }
+    },
+    {
       "displayName": "1.46.0",
       "version": 117,
       "updateGroups": [
         {
           "name": "default",
-          "percentage": 100
+          "percentage": 0
         }
       ],
       "cleanInstall": true,
@@ -61,25 +99,32 @@
       },
       "downloadInfos": {
         "windows64": {
-          "sha256Checksum": "2aec3da3f7fff243279a86ab2fbece419e3867ff5ac97d45296edbd150d62349"
+          "sha256Checksum": "2aec3da3f7fff243279a86ab2fbece419e3867ff5ac97d45296edbd150d62349",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-windows-x64.exe"
         },
         "windowsArm64": {
-          "sha256Checksum": "7f9125b6842e0d8ff34a81caa1069098e59e813f2cbb1839ff8b8d33abe3315d"
+          "sha256Checksum": "7f9125b6842e0d8ff34a81caa1069098e59e813f2cbb1839ff8b8d33abe3315d",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-windows-arm64.exe"
         },
         "mac": {
-          "sha256Checksum": "b5838336619959398268b7e8cd9ce7528b81773c0028b21f47be26d3323c1d39"
+          "sha256Checksum": "b5838336619959398268b7e8cd9ce7528b81773c0028b21f47be26d3323c1d39",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-darwin-x64.zip"
         },
         "macPkg": {
-          "sha256Checksum": "e45789c62fdbaca823c54a8496fdb6f40a52a252803a71c517004dfbb5ba5327"
+          "sha256Checksum": "e45789c62fdbaca823c54a8496fdb6f40a52a252803a71c517004dfbb5ba5327",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-darwin-x64.pkg"
         },
         "macArm64": {
-          "sha256Checksum": "d96f537addf70319d65a7e510242bfcde8b92117ab3a4adf04eda80453939d1d"
+          "sha256Checksum": "d96f537addf70319d65a7e510242bfcde8b92117ab3a4adf04eda80453939d1d",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-darwin-arm64.zip"
         },
         "macArm64Pkg": {
-          "sha256Checksum": "8905072e794fe2a81e6c0964851df759ec0645fdb4670b0e6d4c4cc179087748"
+          "sha256Checksum": "8905072e794fe2a81e6c0964851df759ec0645fdb4670b0e6d4c4cc179087748",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-darwin-arm64.pkg"
         },
         "linux": {
-          "sha256Checksum": "a9275cd1d7f63eddbba86401c90668803500b2ec10b24126a0a8696e67aa9da5"
+          "sha256Checksum": "a9275cd1d7f63eddbba86401c90668803500b2ec10b24126a0a8696e67aa9da5",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-linux-x64.tar.gz"
         }
       }
     },
@@ -678,7 +723,7 @@
       "deprecationDate": "09/25/2026",
       "messageLevel": "info",
       "includePreviousVersionsMessage": false,
-      "alwaysShow": false
+      "alwaysShow": true
     },
     {
       "version": 107,

@@ -46,6 +46,44 @@
       }
     },
     {
+      "displayName": "1.47.1",
+      "version": 119,
+      "updateGroups": [
+        {
+          "name": "default",
+          "percentage": 50
+        }
+      ],
+      "cleanInstall": true,
+      "releaseNotesUrl": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.1/ReleaseNotes.md",
+      "releaseNotesUrls": {
+        "markdown": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.1/ReleaseNotes.md"
+      },
+      "downloadInfos": {
+        "windows64": {
+          "sha256Checksum": "6c248ed66b69ff8867ebd07bb0f86f741cd91ca4a9caeb01b755ed0656abebce"
+        },
+        "windowsArm64": {
+          "sha256Checksum": "ed1dc4537d2da4040dbc4f07ec2eed916f0d74253a2202357b8f3e3fae928b46"
+        },
+        "mac": {
+          "sha256Checksum": "f50db6b43f4644e189b5b3ae1f13f28b0cf1d5cc07cdbfe1f63e644da88d4b5c"
+        },
+        "macPkg": {
+          "sha256Checksum": "c17a6101ca41a80bf0fa963d81287b48808959fd55128032fd6bb205149fa70f"
+        },
+        "macArm64": {
+          "sha256Checksum": "bee06b5d49a281b7ddc11846925cdc1849358752732ee17af7806d02b6125f87"
+        },
+        "macArm64Pkg": {
+          "sha256Checksum": "d94eb7ec955b5254f5ea277696c5b9345833aa6a484ad04d4524c6dd51924117"
+        },
+        "linux": {
+          "sha256Checksum": "f34859cf774822d75538da26fb0ca43ff041b23d875478076a66c605160adcea"
+        }
+      }
+    },
+    {
       "displayName": "1.47.0",
       "version": 118,
       "updateGroups": [
@@ -61,25 +99,32 @@
       },
       "downloadInfos": {
         "windows64": {
-          "sha256Checksum": "6b2aa7962a40b3b8e9997d09899ead89b300434369652f7316acdccab4a63423"
+          "sha256Checksum": "6b2aa7962a40b3b8e9997d09899ead89b300434369652f7316acdccab4a63423",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/StorageExplorer-windows-x64.exe"
         },
         "windowsArm64": {
-          "sha256Checksum": "b1bf59cab15f7e30e0f7a0dc76aa371f1140f726f04965720153d299d344ce3b"
+          "sha256Checksum": "b1bf59cab15f7e30e0f7a0dc76aa371f1140f726f04965720153d299d344ce3b",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/StorageExplorer-windows-arm64.exe"
         },
         "mac": {
-          "sha256Checksum": "1ca27c348c9329942e37be4cb2752096bec868e3c6735e42ab009edd4368d219"
+          "sha256Checksum": "1ca27c348c9329942e37be4cb2752096bec868e3c6735e42ab009edd4368d219",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/StorageExplorer-darwin-x64.zip"
         },
         "macPkg": {
-          "sha256Checksum": "50ef3b714d683808c4e7de9b491995c035dd44869bb47984464eb007b08d4be8"
+          "sha256Checksum": "50ef3b714d683808c4e7de9b491995c035dd44869bb47984464eb007b08d4be8",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/StorageExplorer-darwin-x64.pkg"
         },
         "macArm64": {
-          "sha256Checksum": "0cb7ea66a0740c1e3aee79e3229dcd566b151c91777edd95e17c33db39ecd1f1"
+          "sha256Checksum": "0cb7ea66a0740c1e3aee79e3229dcd566b151c91777edd95e17c33db39ecd1f1",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/StorageExplorer-darwin-arm64.zip"
         },
         "macArm64Pkg": {
-          "sha256Checksum": "83637f0758c91c3a192b6c2c2c003f98d3a0d70c26859edf1722d44cd47a9391"
+          "sha256Checksum": "83637f0758c91c3a192b6c2c2c003f98d3a0d70c26859edf1722d44cd47a9391",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/StorageExplorer-darwin-arm64.pkg"
         },
         "linux": {
-          "sha256Checksum": "b25c0c3194c9d72f8f0c430a735d3dace1c645375bb670b59505f5c052b0e296"
+          "sha256Checksum": "b25c0c3194c9d72f8f0c430a735d3dace1c645375bb670b59505f5c052b0e296",
+          "url": "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/StorageExplorer-linux-x64.tar.gz"
         }
       }
     },
